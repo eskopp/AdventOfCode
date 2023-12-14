@@ -2,9 +2,9 @@ from colorama import Fore, init
 
 
 init(autoreset=True)
-print(f"{Fore.GREEN}Advent of Code 2023, Day 1, Task 1")
-print(f"Task: {Fore.GREEN} https://adventofcode.com/2023/day/1")
-print(f"Load input: {Fore.BLUE} <input.txt>")
+print(f"\n{Fore.GREEN}Advent of Code 2023, Day 1, Task 1")
+print(f"Task:\t\t\t\t {Fore.BLUE} https://adventofcode.com/2023/day/1")
+print(f"Load input:\t\t\t {Fore.BLUE} input.txt")
 
 
 def calculate_calibration_sum(calibration_document):
@@ -24,4 +24,4 @@ with open("./input.txt", "r") as file:
 
 result = calculate_calibration_sum(calibration_document)
 
-print(f"Kalibrierungstest: {Fore.GREEN}{result}")
+print(f"Value:\t\t\t\t  {Fore.BLUE}{result}")
