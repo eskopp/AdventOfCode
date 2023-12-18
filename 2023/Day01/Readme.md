@@ -1,6 +1,6 @@
 # Advent of Code - 2023 - Day 1 - Trebuchet?!
 
-# Task 1
+## Task 1
 
 Something is wrong with global snow production, and you've been selected to take a look. The Elves have even given you a map; on it, they've used stars to mark the top fifty locations that are likely to be having problems.
 
@@ -32,7 +32,7 @@ Your puzzle answer was ``54634``.
 The first half of this puzzle is complete! It provides one gold star: *
 
 
-# Task 2
+## Task 2
 
 Your calculation isn't quite right. It looks like some of the digits are actually spelled out with letters: one, two, three, four, five, six, seven, eight, and nine also count as valid "digits".
 

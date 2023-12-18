@@ -3,15 +3,15 @@ import re
 from colorama import Fore, init
 import os
 
+# Header
+init(autoreset=True)
+print(f"{Fore.GREEN}Advent of Code 2023, Day 2, Task 1")
+print(f"Task: \t {Fore.BLUE} https://adventofcode.com/2023/day/2")
+print(f"Folder:  {Fore.BLUE} {os.path.abspath('.')}")
+print(f"Input: \t {Fore.BLUE} input.txt")
 
-def print_header():
-    init(autoreset=True)
-    print(f"{Fore.GREEN}Advent of Code 2023, Day 2, Task 1")
-    print(f"Task: \t {Fore.BLUE} https://adventofcode.com/2023/day/2")
-    print(f"Folder:  {Fore.BLUE} {os.path.abspath('.')}")
-    print(f"Input: \t {Fore.BLUE} input.txt")
 
-
+# Solution
 def read_game_records(file_path):
     game_records = []
 
@@ -52,9 +52,9 @@ def calculate_possible_games_sum(df):
     return df_percent.query("passed_test == 1")["game_number"].sum()
 
 
-if __name__ == "__main__":
-    print_header()
-    file_path = "input.txt"
-    game_df = read_game_records(file_path)
-    total_solution = calculate_possible_games_sum(game_df)
-    print(f"Value:\t {Fore.BLUE} {total_solution}")
+file_path = "input.txt"
+game_df = read_game_records(file_path)
+total_solution = calculate_possible_games_sum(game_df)
+
+# Result
+print(f"Value:\t {Fore.BLUE} {total_solution}")

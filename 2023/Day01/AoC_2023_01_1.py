@@ -9,6 +9,7 @@ print(f"Folder:  {Fore.BLUE} {os.path.abspath('.')}")
 print(f"Input: \t {Fore.BLUE} input.txt")
 
 
+# Solution
 def calculate_calibration_sum(calibration_document):
     total_sum = 0
     for line in calibration_document:
@@ -26,4 +27,5 @@ with open("./input.txt", "r") as file:
 
 result = calculate_calibration_sum(calibration_document)
 
+# Result
 print(f"Value:\t  {Fore.BLUE}{result}")
