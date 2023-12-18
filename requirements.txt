@@ -1,4 +1,4 @@
-numpy
-pandas
-colorama
-tabulate
+numpy==0.0.1
+pandas==0.0.1
+colorama==0.0.1
+tabulate==0.0.1
