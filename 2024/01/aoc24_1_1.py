@@ -21,7 +21,7 @@ with open("input.in", "r") as file:
         right.append(line[1])
 
 
-# Sortieren der Listen
+# Sortieren der Listena
 left_sort = sorted(left)
 right_sort = sorted(right)
 

@@ -22,27 +22,52 @@ The whole thing could have been done more elegantly via maps. However, efficienc
 
 ## Part 1
 ```python {linenos=table,linenostart=1}
+# AoC 2024 - Day 1 - Task 1
 # https://erik-skopp.de/AdventofCode/2024/1/
 # https://github.com/eskopp/AdventOfCode/blob/main/2024/01/aoc24_1_1.py
 #
-# Day 1 - Part 1 - Historian Hysteria
-# result: 1722302
-
+# Day 1 - Historian Hysteria
 import os
 
-# Arbeitsverzeichnis setzen
+# Die Pfade können je nach Ort abweichen
 os.chdir(os.path.join("2024", "01"))
 
-# Initialisierung der Variablen
-result = 0
+# unsortiere Listen
+left = []
+right = []
+liste = []
 
-# Daten direkt verarbeiten
+# Trennen der Daten in die verschiedenen Spalten
 with open("input.in", "r") as file:
     for line in file:
-        left, right = map(int, line.strip().split("   "))
-        result += abs(left - right)
+        line = line.strip().split("   ")
+        left.append(line[0])
+        right.append(line[1])
 
-# Ausgabe des Ergebnisses
+
+# Sortieren der Listena
+left_sort = sorted(left)
+right_sort = sorted(right)
+
+# Löschen von Altlasten
+del left
+del right
+
+# Berechnen der Paarungen
+index = []
+for runner in range(len(left_sort)):
+    value = int(left_sort[runner]) - int(right_sort[runner])
+    # Betragsfunktion
+    if value < 0:
+        value *= -1
+    index.append(value)
+    del value
+
+# Ermittle das Ergebniss
+result = 0
+for runner in index:
+    result += runner
+
+# Test Ausgabe
 print(result)
-del result
 ```
