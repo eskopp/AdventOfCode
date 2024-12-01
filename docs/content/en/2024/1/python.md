@@ -3,6 +3,10 @@ title: Day 1 - Python
 toc: false
 type: docs
 ---
+{{< callout type="info" >}}
+The whole thing could have been done more elegantly via maps. However, efficiency and speed are not important here. So this is not so important. What matters to me here is the legibility and simplicity of the code. 
+{{< /callout >}}
+
 
 
 ## Download
