@@ -55,4 +55,4 @@ jobs:
           host: ${{ secrets.SSH_SERVER }}
           username: ${{ secrets.SSH_USERNAME }}
           password: ${{ secrets.SSH_PASSWORD }}
-          script: cd /var/www/erik-skopp/adventofcode; mv public/* .;  rm -rf public
+          script: cd /var/www/erik-skopp/adventofcode; mv docs/public/* .;  rm -rf docs
