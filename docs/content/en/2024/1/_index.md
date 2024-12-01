@@ -1,10 +1,10 @@
 ---
-title: AoC 24 - Day 1
+title: Day 1 - Historian Hysteria
 toc: false
 type: docs
 ---
 
-## Day 1: Historian Hysteria
+
 
 
 The Chief Historian is always present for the big Christmas sleigh launch, but nobody has seen him in months! Last anyone heard, he was visiting locations that are historically significant to the North Pole; a group of Senior Historians has asked you to accompany them as they check the places they think he was most likely to visit.
