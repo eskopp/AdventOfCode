@@ -1,4 +1,5 @@
 # https://erik-skopp.de/AdventofCode/2024/1/
+# https://github.com/eskopp/AdventOfCode
 #
 # Day 1 - Part 1 - Historian Hysteria
 # result: 1722302

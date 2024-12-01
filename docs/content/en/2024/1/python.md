@@ -10,6 +10,7 @@ type: docs
 {{< card title="Example" link="https://github.com/eskopp/AdventOfCode/blob/main/2024/01/example.in" icon="user" tag="Github">}}
 {{< card title="Input" link="https://github.com/eskopp/AdventOfCode/blob/main/2024/01/input.in" icon="user" tag="Github">}}
 {{< card title="Source Code Part 1" link="https://github.com/eskopp/AdventOfCode/blob/main/2024/01/aoc24_1_1.py" icon="user" tag="Github">}}
+{{< card title="Source Code Part 2" link="https://github.com/eskopp/AdventOfCode/blob/main/2024/01/aoc24_1_2.py" icon="user" tag="Github">}}
 {{< /cards >}}
 
 
@@ -18,6 +19,7 @@ type: docs
 ## Part 1
 ```python {linenos=table,linenostart=1}
 # https://erik-skopp.de/AdventofCode/2024/1/
+# https://github.com/eskopp/AdventOfCode/blob/main/2024/01/aoc24_1_1.py
 #
 # Day 1 - Part 1 - Historian Hysteria
 # result: 1722302
@@ -40,4 +42,3 @@ with open("input.in", "r") as file:
 print(result)
 del result
 ```
-See: [https://github.com/eskopp/AdventOfCode/blob/main/2024/01/aoc24_1_1.py](https://github.com/eskopp/AdventOfCode/blob/main/2024/01/aoc24_1_1.py)
