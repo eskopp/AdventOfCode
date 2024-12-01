@@ -3,18 +3,18 @@
 # https://github.com/eskopp/AdventOfCode/blob/main/2024/01/aoc24_1_2.py
 #
 # Day 1 - Historian Hysteria
-# result:
+# result: 20373490
 
 import os
 
-# Arbeitsverzeichnis setzen
+# Set the working directory
 os.chdir(os.path.join("2024", "01"))
 
-# Listen für linke und rechte Werte
+# Lists for left and right values
 left = []
 right = []
 
-# Datei einlesen und Daten in Spalten aufteilen
+# Read the file and split data into columns
 with open("input.in", "r") as file:
     for line in file:
         line = line.strip().split("   ")
@@ -22,8 +22,23 @@ with open("input.in", "r") as file:
             left.append(line[0])
             right.append(line[1])
 
-# Zählen, wie oft Werte aus `left` in `right` vorkommen
-result = {value: right.count(value) for value in left}
+# Count how often values from `left` appear in `right`
+# Using a dict here is not ideal for further processing, so it is converted to a List[Tuple]
+list_tuples = {value: right.count(value) for value in left}.items()
 
-# Ausgabe des Ergebnisses
+# Create a list in `index` that aggregates the counts
+# Example: dict_items([('16435', 0), ...]) is processed
+index = []
+for dummy in list_tuples:
+    # Skip empty elements to avoid creating a long list of zeros
+    if dummy[1] != 0:
+        index.append(int(dummy[0]) * dummy[1])
+del list_tuples
+
+# Sum up the individual values
+result = 0
+for dummy in index:
+    result += dummy
+
+# Output the result
 print(result)
