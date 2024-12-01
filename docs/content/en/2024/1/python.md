@@ -2,6 +2,7 @@
 title: Day 1 - Python
 toc: false
 type: docs
+weight: 1
 ---
 
 {{< callout type="info" >}}

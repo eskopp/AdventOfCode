@@ -2,6 +2,7 @@
 title: Day 1 - Rust
 toc: false
 type: docs
+weight: 2
 ---
 {{< callout type="info" >}}
 I have never worked in Rust. My main programming language is Python. I am trying to learn a modern compiler language and C++ as part of the Advent of Codes 2024. Rust is quite handy. Unfortunately, most legacy programs are still written in C++. So unfortunately you have to work with it to find work. 
