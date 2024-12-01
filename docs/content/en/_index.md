@@ -4,13 +4,15 @@ toc: false
 type: docs
 ---
 
+[Link to Advent of Code](https://adventofcode.com)
+
 # 2024
 
 
 {{< callout type="info" >}}
  The projects were written in the version that is current at the time of 01.12.2024. These are the following versions: 
 
-- Go: 1.23
+- Go: 1.23.3
 - Python: 3.13
 - Rust: 1.83.0
 
