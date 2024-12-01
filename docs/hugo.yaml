@@ -19,12 +19,7 @@ markup:
 defaultContentLanguage: en
 
 languages:
-  de:
-    languageName: Deutsch
-    weight: 2
-    title: Advent of Code
-    contentDir: "content/de"
-  
+
   en:
     languageName: Englisch
     weight: 1
