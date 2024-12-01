@@ -4,6 +4,7 @@
 //
 // Day 1 - Historian Hysteria
 // result: 20373490
+
 package main
 
 import (
