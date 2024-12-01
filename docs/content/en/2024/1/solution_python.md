@@ -15,7 +15,7 @@ type: docs
 
 
 ## Part 1
-```python
+```python {linenos=table,linenostart=1}
 # https://erik-skopp.de/AdventofCode/2024/1/
 #
 # Day 1 - Part 1 - Historian Hysteria
