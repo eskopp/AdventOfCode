@@ -1,12 +1,14 @@
 ---
-title: Day 1 - Go 
+title: Day 1 - Julia 
 toc: false
 type: docs
-weight: 2
+weight: 4
 ---
 
 {{< callout type="info" >}}
-I'm not particularly a fan of Go. It feels more complex than Python while being slower than C++ and Rust. While Go certainly has its strengths, for me, they don't outweigh its drawbacks. I primarily use the language because my friends and the university's database department rely on it.
+I don't have much experience with Julia, but I'm curious to explore the language. I'm using the LTS version v1.10.7. Julia is a high-performance language designed specifically for scientific computing. However, it is only used in 0.54% of all projects. While Julia serves an important niche, its focus limits its appeal to a relatively small audience. 
+
+These facts make Julia a genuinely intriguing language. I don't plan to use it for the entirety of Advent of Code, but I enjoy exploring different languages from time to time, and Julia is definitely worth a closer look.
 {{< /callout >}}
 
 ## Download 

@@ -6,7 +6,7 @@ weight: 1
 ---
 
 {{< callout type="info" >}}
-The whole thing could have been done more elegantly via maps. However, efficiency and speed are not important here. So this is not so important. What matters to me here is the legibility and simplicity of the code.
+The entire implementation could have been done more elegantly using maps. However, efficiency and speed are not the focus here, so it’s not a priority. What truly matters to me is the readability and simplicity of the code.
 {{< /callout >}}
 
 ## Download
