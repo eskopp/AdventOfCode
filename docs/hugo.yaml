@@ -38,7 +38,7 @@ menu:
         icon: github
     - name: Instagram
       weight: 7
-      url: "https://instagram.com/ilmenauer_schachverein"
+      url: "https://instagram.com/e.skopp"
       params:
         icon: instagram
 
