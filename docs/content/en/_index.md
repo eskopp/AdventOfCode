@@ -6,6 +6,20 @@ type: docs
 
 # 2024
 
+
+{{< callout type="info" >}}
+ The projects were written in the version that is current at the time of 01.12.2024. These are the following versions: 
+
+- Go: 1.23
+- Python: 3.13
+- Rust: 1.83.0
+
+I program in a Linux WSL2 with Debian 12 and VSCode. 
+
+{{< /callout >}}
+
+
+
 {{< cards >}}
 {{< card link="2024/1" title="Day 1" icon="star" >}}
 {{< card link="2024/2" title="Day 2" icon="star" >}}
