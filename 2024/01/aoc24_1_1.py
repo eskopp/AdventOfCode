@@ -8,44 +8,39 @@
 
 import os
 
-# Die Pfade können je nach Ort abweichen
+# Change the working directory to the specified path
 os.chdir(os.path.join("2024", "01"))
 
-# unsortiere Listen
-left = []
-right = []
-liste = []
+# Unsorted lists for left and right column values
+left_column = []
+right_column = []
 
-# Trennen der Daten in die verschiedenen Spalten
+# Read the file and split data into columns
 with open("input.in", "r") as file:
     for line in file:
-        line = line.strip().split("   ")
-        left.append(line[0])
-        right.append(line[1])
+        line = line.strip().split("   ")  # Split columns based on triple spaces
+        left_column.append(line[0])
+        right_column.append(line[1])
 
+# Sort the left and right columns
+sorted_left = sorted(left_column)
+sorted_right = sorted(right_column)
 
-# Sortieren der Listena
-left_sort = sorted(left)
-right_sort = sorted(right)
+# Free up memory by deleting the original unsorted lists
+del left_column
+del right_column
 
-# Löschen von Altlasten
-del left
-del right
+# Calculate absolute differences between paired values
+differences = []
+for i in range(len(sorted_left)):
+    difference = int(sorted_left[i]) - int(sorted_right[i])
+    # Convert the difference to its absolute value
+    if difference < 0:
+        difference = -difference
+    differences.append(difference)
 
-# Berechnen der Paarungen
-index = []
-for runner in range(len(left_sort)):
-    value = int(left_sort[runner]) - int(right_sort[runner])
-    # Betragsfunktion
-    if value < 0:
-        value *= -1
-    index.append(value)
-    del value
+# Compute the total sum of the differences
+total_difference = sum(differences)
 
-# Ermittle das Ergebniss
-result = 0
-for runner in index:
-    result += runner
-
-# Test Ausgabe
-print(result)
+# Output the result
+print(total_difference)
