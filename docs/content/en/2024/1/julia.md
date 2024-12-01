@@ -22,173 +22,90 @@ These facts make Julia a genuinely intriguing language. I don't plan to use it f
 
 ## Part 1
 
-```go {linenos=table,linenostart=1}
-// AoC 2024 - Day 1 - Task 1
-// https://erik-skopp.de/AdventofCode/2024/1/
-// https://github.com/eskopp/AdventOfCode/blob/main/2024/01/aoc24_1_1.go
-//
-// Day 1 - Historian Hysteria
-// result: 1722302
+```julia {linenos=table,linenostart=1}
+# AoC 2024 - Day 1 - Task 1
+# https://erik-skopp.de/AdventofCode/2024/1/
+# https://github.com/eskopp/AdventOfCode/blob/main/2024/01/aoc24_1_1.jl
+#
+# Day 1 - Historian Hysteria
+# result: 1722302
 
-package main
+# Change the working directory to the specified path
+cd("2024/01")
 
-import (
-	"bufio"
-	"fmt"
-	"os"
-	"path/filepath"
-	"sort"
-	"strconv"
-	"strings"
-)
+# Unsorted arrays for left and right column values
+left_column = []
+right_column = []
 
-func main() {
-	// Change the working directory to the specified path
-	err := os.Chdir(filepath.Join("2024", "01"))
-	if err != nil {
-		fmt.Printf("Error changing directory: %v\n", err)
-		return
-	}
+# Read the file and split data into columns
+open("input.in", "r") do file
+    for line in eachline(file)
+        columns = split(strip(line), "   ") # Split columns based on triple spaces
+        push!(left_column, columns[1])
+        push!(right_column, columns[2])
+    end
+end
 
-	// Unsorted slices for left and right column values
-	var leftColumn []int
-	var rightColumn []int
+# Sort the left and right columns
+sorted_left = sort(parse.(Int, left_column))
+sorted_right = sort(parse.(Int, right_column))
 
-	// Open the input file
-	file, err := os.Open("input.in")
-	if err != nil {
-		fmt.Printf("Error opening file: %v\n", err)
-		return
-	}
-	defer file.Close()
+# Calculate absolute differences between paired values
+differences = [abs(sorted_left[i] - sorted_right[i]) for i in 1:length(sorted_left)]
 
-	// Read the file and split data into columns
-	scanner := bufio.NewScanner(file)
-	for scanner.Scan() {
-		line := strings.TrimSpace(scanner.Text())
-		columns := strings.Split(line, "   ")
-		if len(columns) == 2 {
-			leftValue, err := strconv.Atoi(columns[0])
-			if err != nil {
-				fmt.Printf("Error parsing left value: %v\n", err)
-				return
-			}
-			rightValue, err := strconv.Atoi(columns[1])
-			if err != nil {
-				fmt.Printf("Error parsing right value: %v\n", err)
-				return
-			}
-			leftColumn = append(leftColumn, leftValue)
-			rightColumn = append(rightColumn, rightValue)
-		}
-	}
+# Compute the total sum of the differences
+total_difference = sum(differences)
 
-	if err := scanner.Err(); err != nil {
-		fmt.Printf("Error reading file: %v\n", err)
-		return
-	}
+# Output the result
+println(total_difference)
 
-	// Sort the left and right columns
-	sort.Ints(leftColumn)
-	sort.Ints(rightColumn)
-
-	// Calculate absolute differences between paired values
-	var totalDifference int
-	for i := 0; i < len(leftColumn); i++ {
-		difference := leftColumn[i] - rightColumn[i]
-		if difference < 0 {
-			difference = -difference
-		}
-		totalDifference += difference
-	}
-
-	// Output the result
-	fmt.Println(totalDifference)
-}
 ```
 
 
 ## Part 2 
 
-```go {linenos=table,linenostart=1}
-// AoC 2024 - Day 1 - Task 2
-// https://erik-skopp.de/AdventofCode/2024/1/
-// https://github.com/eskopp/AdventOfCode/blob/main/2024/01/aoc24_1_2.go
-//
-// Day 1 - Historian Hysteria
-// result: 20373490
-package main
+```julia {linenos=table,linenostart=1}
+# AoC 2024 - Day 1 - Task 2
+# https://erik-skopp.de/AdventofCode/2024/1/
+# https://github.com/eskopp/AdventOfCode/blob/main/2024/01/aoc24_1_2.jl
+#
+# Day 1 - Historian Hysteria
+# result: 20373490
 
-import (
-	"bufio"
-	"fmt"
-	"os"
-	"path/filepath"
-	"strconv"
-	"strings"
-)
+# Change the working directory to the specified path
+cd("2024/01")
 
-func main() {
+# Arrays for unique and target values
+unique_values = String[]
+target_values = String[]
 
-	// Change the working directory
-	err := os.Chdir(filepath.Join("2024", "01"))
-	if err != nil {
-		fmt.Printf("Error changing directory: %v\n", err)
-		return
-	}
+# Read the file and split data into columns
+open("input.in", "r") do file
+    for line in eachline(file)
+        columns = split(strip(line), "   ") # Split columns based on triple spaces
+        if length(columns) == 2
+            push!(unique_values, columns[1])
+            push!(target_values, columns[2])
+        end
+    end
+end
 
-	// Lists for unique and target values
-	var uniqueValues []string
-	var targetValues []string
+# Count how often values from `unique_values` appear in `target_values`
+frequency_map = Dict(value => count(==(value), target_values) for value in unique_values)
 
-	// Read the file and split data into columns
-	file, err := os.Open("input.in")
-	if err != nil {
-		fmt.Printf("Error opening file: %v\n", err)
-		return
-	}
-	defer file.Close()
+# Create a list of weighted counts
+weighted_counts = Int[]
+for (value, count) in frequency_map
+    if count != 0
+        push!(weighted_counts, parse(Int, value) * count)
+    end
+end
 
-	scanner := bufio.NewScanner(file)
-	for scanner.Scan() {
-		line := strings.TrimSpace(scanner.Text())
-		columns := strings.Split(line, "   ")
-		if len(columns) == 2 {
-			uniqueValues = append(uniqueValues, columns[0])
-			targetValues = append(targetValues, columns[1])
-		}
-	}
-	if err := scanner.Err(); err != nil {
-		fmt.Printf("Error reading file: %v\n", err)
-		return
-	}
+# Calculate the total sum of weighted counts
+total_sum = sum(weighted_counts)
 
-	// Count how often values from `uniqueValues` appear in `targetValues`
-	counts := make(map[string]int)
-	for _, value := range uniqueValues {
-		counts[value] = 0
-		for _, target := range targetValues {
-			if target == value {
-				counts[value]++
-			}
-		}
-	}
+# Output the result
+println(total_sum)
 
-	// Calculate the weighted sum
-	totalSum := 0
-	for value, count := range counts {
-		if count != 0 {
-			parsedValue, err := strconv.Atoi(value)
-			if err != nil {
-				fmt.Printf("Error parsing value '%s': %v\n", value, err)
-				return
-			}
-			totalSum += parsedValue * count
-		}
-	}
-
-	// Output the result
-	fmt.Println(totalSum)
-}
 
 ```
