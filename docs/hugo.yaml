@@ -24,7 +24,8 @@ languages:
     weight: 1
     title: Advent of Code
     contentDir: "content/de"
-
+  
+  en:
     languageName: German
     weight: 2
     title: Advent of Code
