@@ -16,18 +16,18 @@ markup:
   highlight:
     noClasses: false
 
-defaultContentLanguage: de
+defaultContentLanguage: en
 
 languages:
   de:
     languageName: Deutsch
-    weight: 1
+    weight: 2
     title: Advent of Code
     contentDir: "content/de"
   
   en:
     languageName: Englisch
-    weight: 2
+    weight: 1
     title: Advent of Code
     contentDir: "content/en"  
 menu:
