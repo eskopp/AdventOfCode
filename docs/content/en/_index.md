@@ -4,12 +4,6 @@ toc: false
 type: docs
 ---
 
-# 2023
-
-{{< cards >}}
-{{< card link="2023/1" title="Day 01" icon="star" >}}
-{{< /cards >}}
-
 # 2024
 
 {{< cards >}}

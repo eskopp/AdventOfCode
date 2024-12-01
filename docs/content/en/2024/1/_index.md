@@ -4,3 +4,4 @@ toc: false
 type: docs
 ---
 
+## Day 1: Historian Hysteria
