@@ -20,13 +20,13 @@ defaultContentLanguage: de
 
 languages:
   de:
-    languageName: German
+    languageName: Deutsch
     weight: 1
     title: Advent of Code
     contentDir: "content/de"
   
   en:
-    languageName: German
+    languageName: Englisch
     weight: 2
     title: Advent of Code
     contentDir: "content/en"  
