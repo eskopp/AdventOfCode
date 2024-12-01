@@ -1,5 +1,5 @@
 ---
-title: AoC 24 - Day 1
+title: AoC 24 - Day 15
 toc: false
 type: docs
 ---
