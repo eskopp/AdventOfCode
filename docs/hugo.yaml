@@ -1,4 +1,4 @@
-title: 2. Ilmenauer Open 2024
+title: Advent of Code
 baseURL: "https://erik-skopp.de/AdventofCode/"
 
 # import hextra as module
@@ -32,25 +32,13 @@ languages:
     contentDir: "content/en"  
 menu:
   main:
-    - name: Anmeldung
-      pageRef: "anmeldung"
-      weight: 1
-    - name: Datenschutzerklärung
-      pageRef: datenschutz
-      weight: 3
-    - name: Impressum
-      pageRef: impressum
-      weight: 3
-    - name: Ilmenauer Schachverein ↗
-      url: "https://ilmenauer-schachverein.de"
-      weight: 4
     - name: Search
       weight: 5
       params:
         type: search
     - name: GitHub
       weight: 6
-      url: "https://github.com/IlmenauerSchachverein/IlmenauerOpen2025"
+      url: "https://github.com/eskopp/AdventofCode"
       params:
         icon: github
     - name: Instagram
