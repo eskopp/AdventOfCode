@@ -1,32 +1,111 @@
-# Prerequisites
-*.d
+# General
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.swp
+*.bak
+*.old
+*.orig
 
+# Hugo
+public/
+resources/_gen/
+hugo_stats.json
+
+# Go
+# Binaries for programs and plugins
+*.exe
+*.dll
+*.so
+*.dylib
+*.out
+*.a
+*.o
+*.h
+*.cgo
+*.test
+*.exe~
+
+# Dependency directories
+vendor/
+.gopath/
+
+# Build output
+bin/
+
+# Rust
+target/
+Cargo.lock
+*.rs.bk
+
+# Rust IDE files
+**/Cargo.toml.orig
+**/Cargo.toml.bk
+**/Cargo.lock.bk
+
+# C++
 # Compiled Object files
-*.slo
-*.lo
 *.o
 *.obj
+
+# Compiled Binary files
+*.exe
+*.out
+*.app
 
 # Precompiled Headers
 *.gch
 *.pch
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
+# Libraries
 *.lib
+*.a
+*.la
+*.lo
 
-# Executables
-*.exe
-*.out
-*.app
+# Debug files
+*.log
+*.dSYM/
+*.gcno
+
+# IDE-specific
+.vscode/
+.idea/
+*.iml
+*.pro.user
+
+# Python
+# Byte-compiled files
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# Virtual environment
+env/
+venv/
+ENV/
+venv.bak/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Build and distribution directories
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# MyPy cache
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pytest cache
+.pytest_cache/
+
+# Coverage reports
+.coverage
+htmlcov/
+.tox/
