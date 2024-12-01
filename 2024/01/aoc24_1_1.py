@@ -3,6 +3,9 @@
 # https://github.com/eskopp/AdventOfCode/blob/main/2024/01/aoc24_1_1.py
 #
 # Day 1 - Historian Hysteria
+# result: 1722302
+
+
 import os
 
 # Die Pfade können je nach Ort abweichen
