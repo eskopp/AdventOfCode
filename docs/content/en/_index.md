@@ -1,5 +1,5 @@
 ---
-title: 2. Ilmenauer Open 2025
+title: Advent of Code
 toc: false
 type: docs
 ---
