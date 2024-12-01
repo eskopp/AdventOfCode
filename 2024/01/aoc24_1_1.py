@@ -1,42 +1,51 @@
-use std::fs::File;
-use std::io::{self, BufRead};
-use std::path::Path;
+# AoC 2024 - Day 1 - Task 1
+# https://erik-skopp.de/AdventofCode/2024/1/
+# https://github.com/eskopp/AdventOfCode/blob/main/2024/01/aoc24_1_1.py
+#
+# Day 1 - Historian Hysteria
+# result: 1722302
 
-fn main() -> io::Result<()> {
-    // Pfad zur Eingabedatei
-    let file_path = Path::new("2024/01/input.in");
 
-    // Datei öffnen
-    let file = File::open(file_path)?;
-    let reader = io::BufReader::new(file);
+import os
 
-    // Unsortierte Listen für linke und rechte Spalten
-    let mut left: Vec<i32> = Vec::new();
-    let mut right: Vec<i32> = Vec::new();
+# Die Pfade können je nach Ort abweichen
+os.chdir(os.path.join("2024", "01"))
 
-    // Daten einlesen und in Spalten aufteilen
-    for line in reader.lines() {
-        let line = line?;
-        let columns: Vec<&str> = line.trim().split("   ").collect();
-        if let [left_value, right_value] = columns[..] {
-            left.push(left_value.parse::<i32>().unwrap());
-            right.push(right_value.parse::<i32>().unwrap());
-        }
-    }
+# unsortiere Listen
+left = []
+right = []
+liste = []
 
-    // Listen sortieren
-    left.sort();
-    right.sort();
+# Trennen der Daten in die verschiedenen Spalten
+with open("input.in", "r") as file:
+    for line in file:
+        line = line.strip().split("   ")
+        left.append(line[0])
+        right.append(line[1])
 
-    // Betragsdifferenzen berechnen und aufsummieren
-    let result: i32 = left
-        .iter()
-        .zip(right.iter())
-        .map(|(l, r)| (l - r).abs())
-        .sum();
 
-    // Ergebnis ausgeben
-    println!("Ergebnis: {}", result);
+# Sortieren der Listena
+left_sort = sorted(left)
+right_sort = sorted(right)
 
-    Ok(())
-}
+# Löschen von Altlasten
+del left
+del right
+
+# Berechnen der Paarungen
+index = []
+for runner in range(len(left_sort)):
+    value = int(left_sort[runner]) - int(right_sort[runner])
+    # Betragsfunktion
+    if value < 0:
+        value *= -1
+    index.append(value)
+    del value
+
+# Ermittle das Ergebniss
+result = 0
+for runner in index:
+    result += runner
+
+# Test Ausgabe
+print(result)
