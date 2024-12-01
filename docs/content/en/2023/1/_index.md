@@ -1,5 +1,5 @@
 ---
-title: Advent of Code
+title: Advent of Code - 2023 - Day 1
 toc: false
 type: docs
 ---
