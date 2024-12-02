@@ -1,4 +1,3 @@
 # Advent of Code
 
 
-# Website :)

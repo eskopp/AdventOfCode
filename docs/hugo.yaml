@@ -57,7 +57,7 @@ params:
 
   editURL:
     enable: true
-    base: "https://github.com/eskopp/AdventofCode/edit/main/content"
+    base: "https://github.com/eskopp/AdventofCode/edit/main/docs/content"
   
   page:
     width: full
