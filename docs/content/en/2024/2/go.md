@@ -17,6 +17,13 @@ weight: 2
 ## Part 1
 
 ```go {linenos=table,linenostart=1}
+// AoC 2024 - Day 2 - Task 1
+// https://erik-skopp.de/AdventofCode/2024/2/
+// https://github.com/eskopp/AdventOfCode/blob/main/2024/01/aoc24_2_1.go
+//
+// Day 2 - Red-Nosed Reports
+// result: 306
+
 package main
 
 import (
@@ -96,5 +103,12 @@ func main() {
 ## Part 2 
 
 ```go {linenos=table,linenostart=1}
+// AoC 2024 - Day 2 - Task 2
+// https://erik-skopp.de/AdventofCode/2024/2/
+// https://github.com/eskopp/AdventOfCode/blob/main/2024/01/aoc24_2_2.go
+//
+// Day 2 - Red-Nosed Reports
+// result: 
+
 
 ```
