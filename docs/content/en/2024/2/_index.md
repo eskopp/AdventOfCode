@@ -1,6 +1,6 @@
 ---
 title: Day 2 - Red-Nosed Reports
-toc: false
+toc: true
 type: docs
 ---
 ## Part 1
