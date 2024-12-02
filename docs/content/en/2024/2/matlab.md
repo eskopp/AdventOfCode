@@ -28,7 +28,7 @@ The MATLAB scripting language doesn't suit me well, so I likely won't develop fu
 ```m {linenos=table,linenostart=1}
 % AoC 2024 - Day 2 - Task 1
 % https:%erik-skopp.de/AdventofCode/2024/2/
-% https:%github.com/eskopp/AdventOfCode/blob/main/2024/01/aoc24_2_1.m
+% https:%github.com/eskopp/AdventOfCode/blob/main/2024/02/aoc24_2_1.m
 %
 % Day 2 - Red-Nosed Reports
 % result: 306
@@ -58,7 +58,7 @@ fprintf('Number of safe reports: %d\n', safe_count);
 ```m {linenos=table,linenostart=1}
 % AoC 2024 - Day 2 - Task 2
 % https:%erik-skopp.de/AdventofCode/2024/2/
-% https:%github.com/eskopp/AdventOfCode/blob/main/2024/01/aoc24_2_2.m
+% https:%github.com/eskopp/AdventOfCode/blob/main/2024/02/aoc24_2_2.m
 %
 % Day 2 - Red-Nosed Reports
 % result: 366

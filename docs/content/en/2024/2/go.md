@@ -19,7 +19,7 @@ weight: 2
 ```go {linenos=table,linenostart=1}
 // AoC 2024 - Day 2 - Task 1
 // https://erik-skopp.de/AdventofCode/2024/2/
-// https://github.com/eskopp/AdventOfCode/blob/main/2024/01/aoc24_2_1.go
+// https://github.com/eskopp/AdventOfCode/blob/main/2024/02/aoc24_2_1.go
 //
 // Day 2 - Red-Nosed Reports
 // result: 306
@@ -105,7 +105,7 @@ func main() {
 ```go {linenos=table,linenostart=1}
 // AoC 2024 - Day 2 - Task 2
 // https://erik-skopp.de/AdventofCode/2024/2/
-// https://github.com/eskopp/AdventOfCode/blob/main/2024/01/aoc24_2_2.go
+// https://github.com/eskopp/AdventOfCode/blob/main/2024/02/aoc24_2_2.go
 //
 // Day 2 - Red-Nosed Reports
 // result: 366
