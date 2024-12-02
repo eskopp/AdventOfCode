@@ -3,7 +3,7 @@
 # https://github.com/eskopp/AdventOfCode/blob/main/2024/01/aoc24_2_2.py
 #
 # Day 2 - Red-Nosed Reports
-# result: 
+# result: 366
 
 
 from os import chdir
@@ -14,9 +14,34 @@ chdir(join("2024", "02"))
 
 # Load the file and convert the data into integers
 data = []
-with open("example.in", "r") as file:
+with open("input.in", "r") as file:
     for line in file:
         # Remove line breaks and convert the line into a list of integers
         data.append(list(map(int, line.strip().split(" "))))
 
-print(data)
+# Function to check if a list is safe
+def is_safe(levels):
+    # Check if the list is sorted either ascending or descending
+    if levels == sorted(levels) or levels == sorted(levels, reverse=True):
+        # Check the differences between adjacent numbers
+        differences = [abs(levels[i] - levels[i+1]) for i in range(len(levels)-1)]
+        return all(1 <= diff <= 3 for diff in differences)
+    return False
+
+# Function to check if a report can be made safe by removing one level
+def can_be_made_safe(levels):
+    # Try removing each level and check if the remaining list is safe
+    for i in range(len(levels)):
+        modified_levels = levels[:i] + levels[i+1:]  # Remove the i-th element
+        if is_safe(modified_levels):
+            return True
+    return False
+
+# Count the safe reports considering the Problem Dampener
+safe_count = 0
+for report in data:
+    if is_safe(report) or can_be_made_safe(report):
+        safe_count += 1
+
+# Print the result
+print(f"Number of safe reports with Problem Dampener: {safe_count}")
