@@ -21,9 +21,9 @@ I program in a Linux WSL2 with Debian 12 and VSCode.
 
 {{< cards >}}
 {{< card link="2024/1" title="Day 01" icon="star" tag="2 stars">}}
-{{< card link="2024/2" title="Day 02" icon="star" tag="2 star">}}
-<!-- {{< card link="2024/3" title="Day 03" icon="star" >}}
-{{< card link="2024/4" title="Day 04" icon="star" >}}
+{{< card link="2024/2" title="Day 02" icon="star" tag="2 stars">}}
+{{< card link="2024/3" title="Day 03" icon="star" >}}
+<!--{{< card link="2024/4" title="Day 04" icon="star" >}}
 {{< card link="2024/5" title="Day 05" icon="star" >}}
 {{< card link="2024/6" title="Day 06" icon="star" >}}
 {{< card link="2024/7" title="Day 07" icon="star" >}}

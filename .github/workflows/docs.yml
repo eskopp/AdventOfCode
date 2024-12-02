@@ -1,4 +1,4 @@
-name: Deploy German
+name: Deploy English
 
 on:
   push:
