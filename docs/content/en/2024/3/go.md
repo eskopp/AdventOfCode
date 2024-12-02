@@ -7,10 +7,10 @@ weight: 2
 
 ## Download 
 {{< cards >}}
-{{< card title="Example" link="https://github.com/eskopp/AdventOfCode/blob/main/2024/02/example.in" icon="user" tag="Github">}}
-{{< card title="Input" link="https://github.com/eskopp/AdventOfCode/blob/main/2024/02/input.in" icon="user" tag="Github">}}
-{{< card title="Source Code Part 1" link="https://github.com/eskopp/AdventOfCode/blob/main/2024/02/aoc24_2_1.go" icon="user" tag="Github">}}
-{{< card title="Source Code Part 2" link="https://github.com/eskopp/AdventOfCode/blob/main/2024/02/aoc24_2_2.go" icon="user" tag="Github">}}
+{{< card title="Example" link="https://github.com/eskopp/AdventOfCode/blob/main/2024/03/example.in" icon="user" tag="Github">}}
+{{< card title="Input" link="https://github.com/eskopp/AdventOfCode/blob/main/2024/03/input.in" icon="user" tag="Github">}}
+{{< card title="Source Code Part 1" link="https://github.com/eskopp/AdventOfCode/blob/main/2024/03/aoc24_3_1.go" icon="user" tag="Github">}}
+{{< card title="Source Code Part 2" link="https://github.com/eskopp/AdventOfCode/blob/main/2024/03/aoc24_3_2.go" icon="user" tag="Github">}}
 {{< /cards >}}
 
 
@@ -19,7 +19,7 @@ weight: 2
 ```go {linenos=table,linenostart=1}
 // AoC 2024 - Day 2 - Task 1
 // https://erik-skopp.de/AdventofCode/2024/2/
-// https://github.com/eskopp/AdventOfCode/blob/main/2024/01/aoc24_2_1.go
+// https://github.com/eskopp/AdventOfCode/blob/main/2024/03/aoc24_2_1.go
 //
 // Day 2 - Red-Nosed Reports
 // result: 306

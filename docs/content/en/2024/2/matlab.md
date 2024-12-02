@@ -15,7 +15,7 @@ The MATLAB scripting language doesn't suit me well, so I likely won't develop fu
 {{< card title="Example" link="https://github.com/eskopp/AdventOfCode/blob/main/2024/02/example.in" icon="user" tag="Github">}}
 {{< card title="Input" link="https://github.com/eskopp/AdventOfCode/blob/main/2024/02/input.in" icon="user" tag="Github">}}
 {{< card title="Source Code Part 1" link="https://github.com/eskopp/AdventOfCode/blob/main/2024/02/aoc24_2_1.m" icon="user" tag="Github">}}
-{{< card title="Source Code Part 2" link="https://github.com/eskopp/AdventOfCode/blob/main/2024/01/aoc24_2_2.m" icon="user" tag="Github">}}
+{{< card title="Source Code Part 2" link="https://github.com/eskopp/AdventOfCode/blob/main/2024/02/aoc24_2_2.m" icon="user" tag="Github">}}
 {{< /cards >}}
 
 {{< callout type="error" >}}
