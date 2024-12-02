@@ -1,5 +1,5 @@
 ---
-title: Day 1 - Python
+title: Day 2 - Python
 toc: true
 type: docs
 weight: 1

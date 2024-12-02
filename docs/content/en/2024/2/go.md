@@ -1,6 +1,6 @@
 ---
-title: Day 1 - Go 
-toc: false
+title: Day 2 - Go 
+toc: true
 type: docs
 weight: 2
 ---
