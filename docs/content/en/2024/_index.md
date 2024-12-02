@@ -1,6 +1,6 @@
 ---
 title: 2024
-toc: false
+toc: true
 type: docs
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Day 1 - Python
-toc: false
+toc: true
 type: docs
 weight: 1
 ---

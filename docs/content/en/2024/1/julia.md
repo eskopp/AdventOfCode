@@ -1,6 +1,6 @@
 ---
 title: Day 1 - Julia 
-toc: false
+toc: true
 type: docs
 weight: 4
 ---

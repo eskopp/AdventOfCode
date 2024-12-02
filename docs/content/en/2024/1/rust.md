@@ -1,6 +1,6 @@
 ---
 title: Day 1 - Rust
-toc: false
+toc: true
 type: docs
 weight: 2
 ---

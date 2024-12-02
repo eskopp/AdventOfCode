@@ -1,6 +1,6 @@
 ---
 title: Advent of Code
-toc: false
+toc: true
 type: docs
 ---
 
