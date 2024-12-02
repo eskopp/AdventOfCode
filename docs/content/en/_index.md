@@ -20,15 +20,15 @@ I program in a Linux WSL2 with Debian 12 and VSCode.
 {{< /callout >}}
 
 {{< cards >}}
-{{< card link="2024/1" title="Day 1" icon="star" tag="2 stars">}}
-{{< card link="2024/2" title="Day 2" icon="star" >}}
-{{< card link="2024/3" title="Day 3" icon="star" >}}
-{{< card link="2024/4" title="Day 4" icon="star" >}}
-{{< card link="2024/5" title="Day 5" icon="star" >}}
-{{< card link="2024/6" title="Day 6" icon="star" >}}
-{{< card link="2024/7" title="Day 7" icon="star" >}}
-{{< card link="2024/8" title="Day 8" icon="star" >}}
-{{< card link="2024/9" title="Day 9" icon="star" >}}
+{{< card link="2024/1" title="Day 01" icon="star" tag="2 stars">}}
+{{< card link="2024/2" title="Day 02" icon="star" tag="1 star">}}
+{{< card link="2024/3" title="Day 03" icon="star" >}}
+{{< card link="2024/4" title="Day 04" icon="star" >}}
+{{< card link="2024/5" title="Day 05" icon="star" >}}
+{{< card link="2024/6" title="Day 06" icon="star" >}}
+{{< card link="2024/7" title="Day 07" icon="star" >}}
+{{< card link="2024/8" title="Day 08" icon="star" >}}
+{{< card link="2024/9" title="Day 09" icon="star" >}}
 {{< card link="2024/10" title="Day 10" icon="star" >}}
 {{< card link="2024/11" title="Day 11" icon="star" >}}
 {{< card link="2024/12" title="Day 12" icon="star" >}}

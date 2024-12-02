@@ -6,9 +6,8 @@ type: docs
 
 {{< cards >}}
 {{< card link="1" title="Day 1" icon="star" tag="2 stars">}}
-
-<!--{{< card link="2" title="Day 2" icon="star" >}}
-{{< card link="3" title="Day 3" icon="star" >}}
+{{< card link="2" title="Day 2" icon="star" tag="1 star">}}
+<!-- {{< card link="3" title="Day 3" icon="star" >}}
 {{< card link="4" title="Day 4" icon="star" >}}
 {{< card link="5" title="Day 5" icon="star" >}}
 {{< card link="6" title="Day 6" icon="star" >}}
