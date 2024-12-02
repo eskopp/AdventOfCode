@@ -52,12 +52,12 @@ params:
     default: dark
 
   footer:
-    displayCopyright: true
-    displayPoweredBy: true
+    displayCopyright: false
+    displayPoweredBy: false
 
   editURL:
-    enable: false
-    base: "https://github.com/eskopp/AdventofCode/edit/main/"
+    enable: true
+    base: "https://github.com/eskopp/AdventofCode/edit/main/content"
   
   page:
     width: full
