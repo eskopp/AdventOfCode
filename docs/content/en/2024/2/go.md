@@ -110,5 +110,90 @@ func main() {
 // Day 2 - Red-Nosed Reports
 // result: 366
 
+package main
 
+import (
+	"bufio"
+	"fmt"
+	"os"
+	"strconv"
+	"strings"
+)
+
+// Function to check if a list of levels is safe
+func isSafe(levels []int) bool {
+	ascending := true
+	descending := true
+
+	// Check if the list is sorted either ascending or descending
+	for i := 0; i < len(levels)-1; i++ {
+		diff := levels[i+1] - levels[i]
+		if diff > 3 || diff < -3 {
+			return false
+		}
+		if diff < 0 {
+			ascending = false
+		}
+		if diff > 0 {
+			descending = false
+		}
+	}
+
+	return ascending || descending
+}
+
+// Function to check if a list can be made safe by removing one level
+func canBeMadeSafe(levels []int) bool {
+	for i := range levels {
+		// Create a new list with one level removed
+		modifiedLevels := append([]int{}, levels[:i]...)
+		modifiedLevels = append(modifiedLevels, levels[i+1:]...)
+
+		if isSafe(modifiedLevels) {
+			return true
+		}
+	}
+	return false
+}
+
+func main() {
+	// Open the input file
+	file, err := os.Open("example.in")
+	if err != nil {
+		fmt.Println("Error opening file:", err)
+		return
+	}
+	defer file.Close()
+
+	var data [][]int
+
+	// Read the file line by line
+	scanner := bufio.NewScanner(file)
+	for scanner.Scan() {
+		line := scanner.Text()
+		// Split the line into strings and convert to integers
+		levels := strings.Fields(line)
+		intLevels := make([]int, len(levels))
+		for i, str := range levels {
+			intLevels[i], _ = strconv.Atoi(str)
+		}
+		data = append(data, intLevels)
+	}
+
+	if err := scanner.Err(); err != nil {
+		fmt.Println("Error reading file:", err)
+		return
+	}
+
+	// Count the number of safe reports
+	safeCount := 0
+	for _, report := range data {
+		if isSafe(report) || canBeMadeSafe(report) {
+			safeCount++
+		}
+	}
+
+	// Print the result
+	fmt.Printf("Number of safe reports with Problem Dampener: %d\n", safeCount)
+}
 ```
