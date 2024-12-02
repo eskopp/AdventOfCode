@@ -19,17 +19,4 @@ with open("example.in", "r") as file:
         # Remove line breaks and convert the line into a list of integers
         data.append(list(map(int, line.strip().split(" "))))
 
-# Function to check if a list is safe
-def is_safe(levels):
-    # Check if the list is sorted either ascending or descending
-    if levels == sorted(levels) or levels == sorted(levels, reverse=True):
-        # Check the differences between adjacent numbers
-        differences = [abs(levels[i] - levels[i+1]) for i in range(len(levels)-1)]
-        return all(1 <= diff <= 3 for diff in differences)
-    return False
-
-# Count the safe reports
-safe_count = sum(1 for report in data if is_safe(report))
-
-# Print the result
-print(f"Number of safe reports: {safe_count}")
+print(data)

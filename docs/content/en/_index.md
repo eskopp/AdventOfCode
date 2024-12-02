@@ -22,7 +22,7 @@ I program in a Linux WSL2 with Debian 12 and VSCode.
 {{< cards >}}
 {{< card link="2024/1" title="Day 01" icon="star" tag="2 stars">}}
 {{< card link="2024/2" title="Day 02" icon="star" tag="1 star">}}
-{{< card link="2024/3" title="Day 03" icon="star" >}}
+<!-- {{< card link="2024/3" title="Day 03" icon="star" >}}
 {{< card link="2024/4" title="Day 04" icon="star" >}}
 {{< card link="2024/5" title="Day 05" icon="star" >}}
 {{< card link="2024/6" title="Day 06" icon="star" >}}
@@ -45,3 +45,4 @@ I program in a Linux WSL2 with Debian 12 and VSCode.
 {{< card link="2024/23" title="Day 23" icon="star" >}}
 {{< card link="2024/24" title="Day 24" icon="star" >}}
 {{< /cards >}}
+-->
