@@ -5,6 +5,11 @@ type: docs
 weight: 2
 ---
 
+
+{{< callout type="info" >}}
+The MATLAB scripting language doesn't suit me well, so I likely won't develop future scripts in MATLAB. Another drawback is that these scripts can only be run using paid software, which is a significant limitation. While many universities offer free licenses for students, relying on proprietary and costly software isn't ideal in the long term.
+{{< /callout >}}
+
 ## Download 
 {{< cards >}}
 {{< card title="Example" link="https://github.com/eskopp/AdventOfCode/blob/main/2024/02/example.in" icon="user" tag="Github">}}
