@@ -1,22 +1,10 @@
----
-title: Day 1 - Go 
-toc: false
-type: docs
-weight: 2
----
+// AoC 2024 - Day 2 - Task 1
+// https://erik-skopp.de/AdventofCode/2024/2/
+// https://github.com/eskopp/AdventOfCode/blob/main/2024/01/aoc24_2_1.go
+//
+// Day 2 - Red-Nosed Reports
+// result: 306
 
-## Download 
-{{< cards >}}
-{{< card title="Example" link="https://github.com/eskopp/AdventOfCode/blob/main/2024/02/example.in" icon="user" tag="Github">}}
-{{< card title="Input" link="https://github.com/eskopp/AdventOfCode/blob/main/2024/02/input.in" icon="user" tag="Github">}}
-{{< card title="Source Code Part 1" link="https://github.com/eskopp/AdventOfCode/blob/main/2024/02/aoc24_2_1.go" icon="user" tag="Github">}}
-{{< card title="Source Code Part 2" link="https://github.com/eskopp/AdventOfCode/blob/main/2024/01/aoc24_2_2.go" icon="user" tag="Github">}}
-{{< /cards >}}
-
-
-## Part 1
-
-```go {linenos=table,linenostart=1}
 package main
 
 import (
@@ -89,12 +77,3 @@ func main() {
 	// Print the result
 	fmt.Printf("Number of safe reports: %d\n", safeCount)
 }
-
-```
-
-
-## Part 2 
-
-```go {linenos=table,linenostart=1}
-
-```
