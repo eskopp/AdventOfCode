@@ -1,6 +1,6 @@
-// AoC 2024 - Day 2 - Task 2
-// https://erik-skopp.de/AdventofCode/2024/2/
-// https://github.com/eskopp/AdventOfCode/blob/main/2024/02/aoc24_2_2.go
+// AoC 2024 - Day 3 - Task 2
+// https://erik-skopp.de/AdventofCode/2024/3/
+// https://github.com/eskopp/AdventOfCode/blob/main/2024/03/aoc24_3_2.go
 //
-// Day 2 - Red-Nosed Reports
-// result: 366
+// Day 3 - Mull It Over
+// result: 
