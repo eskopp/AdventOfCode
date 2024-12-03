@@ -10,8 +10,8 @@ T.B.A.
 ## Download
 
 {{< cards >}}
-{{< card title="Example" link="https://github.com/eskopp/AdventOfCode/blob/main/2024/02/example.in" icon="user" tag="Github">}}
-{{< card title="Input" link="https://github.com/eskopp/AdventOfCode/blob/main/2024/02/input.in" icon="user" tag="Github">}}
+{{< card title="Example" link="https://github.com/eskopp/AdventOfCode/blob/main/2024/03/example.in" icon="user" tag="Github">}}
+{{< card title="Input" link="https://github.com/eskopp/AdventOfCode/blob/main/2024/03/input.in" icon="user" tag="Github">}}
 {{< card title="Source Code Part 1" link="https://github.com/eskopp/AdventOfCode/blob/main/2024/03/aoc24_3_1.py" icon="user" tag="Github">}}
 {{< card title="Source Code Part 2" link="https://github.com/eskopp/AdventOfCode/blob/main/2024/03/aoc24_3_2.py" icon="user" tag="Github">}}
 {{< /cards >}}
@@ -19,11 +19,11 @@ T.B.A.
 ## Part 1
 
 ```python {linenos=table,linenostart=1}
-# AoC 2024 - Day 33 - Task 1
+# AoC 2024 - Day 3 - Task 1
 # https://erik-skopp.de/AdventofCode/2024/3/
 # https://github.com/eskopp/AdventOfCode/blob/main/2024/03/aoc24_3_1.py
 #
-# Day 3 -
+# Day 3 - Mull It Over
 # result:
 
 ```
@@ -35,7 +35,7 @@ T.B.A.
 # https://erik-skopp.de/AdventofCode/2024/2/
 # https://github.com/eskopp/AdventOfCode/blob/main/2024/03/aoc24_3_2.py
 #
-# Day 3 - 
+# Day 3 - Mull It Over
 # result: 
 
 
