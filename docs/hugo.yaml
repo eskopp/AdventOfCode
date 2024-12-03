@@ -52,8 +52,8 @@ params:
     default: dark
 
   footer:
-    displayCopyright: false
-    displayPoweredBy: false
+    displayCopyright: true
+    displayPoweredBy: true
 
   editURL:
     enable: true
