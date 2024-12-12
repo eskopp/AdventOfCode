@@ -3,8 +3,8 @@ baseURL: "https://erik-skopp.de/AdventofCode/"
 
 # import hextra as module
 module:
- imports:
-  - path: github.com/imfing/hextra
+  imports:
+    - path: github.com/imfing/hextra
 
 markup:
   # allow raw html
@@ -17,14 +17,16 @@ markup:
     noClasses: false
 
 defaultContentLanguage: en
+services:
+  googleAnalytics:
+    ID: G-T4Q663C3TH
 
 languages:
-
   en:
     languageName: Englisch
     weight: 1
     title: Advent of Code
-    contentDir: "content/en"  
+    contentDir: "content/en"
 menu:
   main:
     - name: Search
@@ -58,6 +60,6 @@ params:
   editURL:
     enable: true
     base: "https://github.com/eskopp/AdventofCode/edit/main/docs/content"
-  
+
   page:
     width: full
