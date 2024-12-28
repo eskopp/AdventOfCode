@@ -16,17 +16,25 @@ markup:
   highlight:
     noClasses: false
 
-defaultContentLanguage: en
+
 services:
   googleAnalytics:
     ID: G-RYV544QMX8
 
+defaultContentLanguage: de
 languages:
-  en:
-    languageName: Englisch
+  de:
+    languageName: Deutsch (German)
     weight: 1
     title: Advent of Code
+    contentDir: "content/de"
+
+  en:
+    languageName: Englisch (English)
+    weight: 2
+    title: Advent of Code
     contentDir: "content/en"
+
 menu:
   main:
     - name: Search

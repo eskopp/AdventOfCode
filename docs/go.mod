@@ -1,5 +1,5 @@
-module open24.ilmenauer-schachverein.de
+module erik-skopp.de/adventofcode
 
-go 1.23
+go 1.23.4
 
-require github.com/imfing/hextra v0.8.6 // indirect
+require github.com/imfing/hextra v0.9.1 // indirect
