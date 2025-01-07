@@ -39,6 +39,7 @@ jobs:
         run: |
           cd docs
           hugo mod get
+          hugo mod tidy
           hugo
 
       - name: Deploy files via SSH

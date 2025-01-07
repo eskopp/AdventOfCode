@@ -19,7 +19,7 @@ markup:
 
 services:
   googleAnalytics:
-    ID: G-RYV544QMX8
+    ID: G-HJS7Q25FH1
 
 defaultContentLanguage: de
 languages:
@@ -48,7 +48,7 @@ menu:
         icon: github
     - name: Instagram
       weight: 7
-      url: "https://instagram.com/e.skopp"
+      url: "https://instagram.com/erik.skopp"
       params:
         icon: instagram
 
