@@ -48,7 +48,7 @@ jobs:
           host: ${{ secrets.SSH_SERVER }}
           username: ${{ secrets.SSH_USERNAME }}
           source: "docs/public/*"
-          target: "/var/www/erikskopp/adventofcode"
+          target: "/var/www/adventofcode"
           rm: true
           password: ${{ secrets.SSH_PASSWORD }}
 
@@ -59,6 +59,6 @@ jobs:
           username: ${{ secrets.SSH_USERNAME }}
           password: ${{ secrets.SSH_PASSWORD }}
           script: |
-            cd /var/www/erikskopp/adventofcode
+            cd /var/www/adventofcode
             mv docs/public/* .
             rm -rf docs
