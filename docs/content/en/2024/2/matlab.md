@@ -1,16 +1,16 @@
 ---
-title: Day 2 - Matlab 
+title: Day 2 - Matlab
 toc: true
 type: docs
 weight: 2
 ---
 
-
 {{< callout type="info" >}}
 The MATLAB scripting language doesn't suit me well, so I likely won't develop future scripts in MATLAB. Another drawback is that these scripts can only be run using paid software, which is a significant limitation. While many universities offer free licenses for students, relying on proprietary and costly software isn't ideal in the long term.
 {{< /callout >}}
 
-## Download 
+## Download
+
 {{< cards >}}
 {{< card title="Example" link="https://github.com/eskopp/AdventOfCode/blob/main/2024/02/example.in" icon="user" tag="Github">}}
 {{< card title="Input" link="https://github.com/eskopp/AdventOfCode/blob/main/2024/02/input.in" icon="user" tag="Github">}}
@@ -19,9 +19,8 @@ The MATLAB scripting language doesn't suit me well, so I likely won't develop fu
 {{< /cards >}}
 
 {{< callout type="error" >}}
-  The highlighter does not work well with the Matlab files. It cannot place them correctly. It recognizes the Matlab files as Objective-C. I ask for your indulgence. 
+The highlighter does not work well with the Matlab files. It cannot place them correctly. It recognizes the Matlab files as Objective-C. I ask for your indulgence.
 {{< /callout >}}
-
 
 ## Part 1
 
@@ -53,7 +52,7 @@ safe_count = sum(cellfun(is_safe, data));
 fprintf('Number of safe reports: %d\n', safe_count);
 ```
 
-## Part 2 
+## Part 2
 
 ```m {linenos=table,linenostart=1}
 % AoC 2024 - Day 2 - Task 2

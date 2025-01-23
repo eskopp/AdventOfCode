@@ -1,5 +1,5 @@
 ---
-title: Day 1 - Go 
+title: Day 1 - Go
 toc: true
 type: docs
 weight: 2
@@ -9,14 +9,14 @@ weight: 2
 I'm not particularly a fan of Go. It feels more complex than Python while being slower than C++ and Rust. While Go certainly has its strengths, for me, they don't outweigh its drawbacks. I primarily use the language because my friends and the university's database department rely on it.
 {{< /callout >}}
 
-## Download 
+## Download
+
 {{< cards >}}
 {{< card title="Example" link="https://github.com/eskopp/AdventOfCode/blob/main/2024/01/example.in" icon="user" tag="Github">}}
 {{< card title="Input" link="https://github.com/eskopp/AdventOfCode/blob/main/2024/01/input.in" icon="user" tag="Github">}}
 {{< card title="Source Code Part 1" link="https://github.com/eskopp/AdventOfCode/blob/main/2024/01/aoc24_1_1.go" icon="user" tag="Github">}}
 {{< card title="Source Code Part 2" link="https://github.com/eskopp/AdventOfCode/blob/main/2024/01/aoc24_1_2.go" icon="user" tag="Github">}}
 {{< /cards >}}
-
 
 ## Part 1
 
@@ -105,8 +105,7 @@ func main() {
 }
 ```
 
-
-## Part 2 
+## Part 2
 
 ```go {linenos=table,linenostart=1}
 // AoC 2024 - Day 1 - Task 2

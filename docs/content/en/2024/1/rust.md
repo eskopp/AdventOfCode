@@ -4,8 +4,9 @@ toc: true
 type: docs
 weight: 2
 ---
+
 {{< callout type="info" >}}
-I have never worked in Rust. My main programming language is Python. I am trying to learn a modern compiler language and C++ as part of the Advent of Codes 2024. Rust is quite handy. Unfortunately, most legacy programs are still written in C++. So unfortunately you have to work with it to find work. 
+I have never worked in Rust. My main programming language is Python. I am trying to learn a modern compiler language and C++ as part of the Advent of Codes 2024. Rust is quite handy. Unfortunately, most legacy programs are still written in C++. So unfortunately you have to work with it to find work.
 {{< /callout >}}
 
 ## Download
@@ -121,7 +122,7 @@ use std::path::Path;
 
 fn main() -> io::Result<()> {
     // Set the working directory
-    let file_path = Path::new("input.in"); 
+    let file_path = Path::new("input.in");
 
     // Vectors for unique and target values
     let mut unique_values: Vec<String> = Vec::new();

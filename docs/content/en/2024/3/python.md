@@ -5,7 +5,7 @@ type: docs
 weight: 1
 ---
 
-T.B.A.  
+T.B.A.
 
 ## Download
 
@@ -36,7 +36,7 @@ T.B.A.
 # https://github.com/eskopp/AdventOfCode/blob/main/2024/03/aoc24_3_2.py
 #
 # Day 3 - Mull It Over
-# result: 
+# result:
 
 
 ```

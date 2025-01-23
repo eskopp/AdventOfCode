@@ -16,7 +16,6 @@ markup:
   highlight:
     noClasses: false
 
-
 services:
   googleAnalytics:
     ID: G-HJS7Q25FH1

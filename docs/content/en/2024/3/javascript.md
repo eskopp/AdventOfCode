@@ -5,7 +5,7 @@ type: docs
 weight: 1
 ---
 
-T.B.A.  
+T.B.A.
 
 ## Download
 
@@ -24,23 +24,16 @@ T.B.A.
 // https://github.com/eskopp/AdventOfCode/blob/main/2024/03/aoc24_3_1.js
 //
 // Day 3 - Mull It Over
-// result: 
-
-
-
+// result:
 ```
 
 ## Part 2
 
-```js  {linenos=table,linenostart=1}
+```js {linenos=table,linenostart=1}
 // AoC 2024 - Day 3 - Task 2
 // https://erik-skopp.de/AdventofCode/2024/3/
 // https://github.com/eskopp/AdventOfCode/blob/main/2024/03/aoc24_3_2.js
 //
 // Day 3 - Mull It Over
-// result: 
-
-
-
-
+// result:
 ```

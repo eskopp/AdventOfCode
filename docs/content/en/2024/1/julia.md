@@ -1,24 +1,24 @@
 ---
-title: Day 1 - Julia 
+title: Day 1 - Julia
 toc: true
 type: docs
 weight: 4
 ---
 
 {{< callout type="info" >}}
-I don't have much experience with Julia, but I'm curious to explore the language. I'm using the LTS version v1.10.7. Julia is a high-performance language designed specifically for scientific computing. However, it is only used in 0.54% of all projects. While Julia serves an important niche, its focus limits its appeal to a relatively small audience. 
+I don't have much experience with Julia, but I'm curious to explore the language. I'm using the LTS version v1.10.7. Julia is a high-performance language designed specifically for scientific computing. However, it is only used in 0.54% of all projects. While Julia serves an important niche, its focus limits its appeal to a relatively small audience.
 
 These facts make Julia a genuinely intriguing language. I don't plan to use it for the entirety of Advent of Code, but I enjoy exploring different languages from time to time, and Julia is definitely worth a closer look.
 {{< /callout >}}
 
-## Download 
+## Download
+
 {{< cards >}}
 {{< card title="Example" link="https://github.com/eskopp/AdventOfCode/blob/main/2024/01/example.in" icon="user" tag="Github">}}
 {{< card title="Input" link="https://github.com/eskopp/AdventOfCode/blob/main/2024/01/input.in" icon="user" tag="Github">}}
 {{< card title="Source Code Part 1" link="https://github.com/eskopp/AdventOfCode/blob/main/2024/01/aoc24_1_1.jl" icon="user" tag="Github">}}
 {{< card title="Source Code Part 2" link="https://github.com/eskopp/AdventOfCode/blob/main/2024/01/aoc24_1_2.jl" icon="user" tag="Github">}}
 {{< /cards >}}
-
 
 ## Part 1
 
@@ -61,8 +61,7 @@ println(total_difference)
 
 ```
 
-
-## Part 2 
+## Part 2
 
 ```julia {linenos=table,linenostart=1}
 # AoC 2024 - Day 1 - Task 2
