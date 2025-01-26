@@ -15,7 +15,7 @@ jobs:
 
       # Advent of Code
       - name: Sync GitHub to GitLab
-        uses: eskopp/github-to-gitlab@v1
+        uses: eskopp/github-to-gitlab@v2
         with:
           git_username: "ZXNrb3Bw"
           git_email: "c2tvcHAuZXJpa0BnbWFpbC5jb20="
