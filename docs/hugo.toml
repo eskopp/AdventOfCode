@@ -1,5 +1,5 @@
 title = "Advent of Code"
-baseURL = "https://erik-skopp.de/AdventofCode/"
+baseURL = "https://adventofcode.erik-skopp.de"
 
 # Import hextra as module
 [module]
