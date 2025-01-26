@@ -17,3 +17,4 @@ rm -f hugo_extended_${VERSION_CLEANED}_Linux-64bit.tar.gz
 
 # Erfolgsmeldung
 echo "Hugo $VERSION installiert!"
+ 
