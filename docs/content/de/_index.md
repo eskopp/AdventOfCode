@@ -7,7 +7,7 @@ type: docs
 [Link zu Advent of Code](https://adventofcode.com)
 
 # 2024
- 
+
 {{< cards >}}
 {{< card link="2024/1" title="Tag 01" icon="star" tag="2 stars" >}}
 {{< card link="2024/2" title="Tag 02" icon="star" tag="2 stars" >}}
