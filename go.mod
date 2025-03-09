@@ -1,6 +1,6 @@
 module adventofcode.erik-skopp.de
 
-go 1.24.0
+go 1.24.1
 
 require (
 	github.com/gethinode/mod-flexsearch v1.12.1 // indirect
